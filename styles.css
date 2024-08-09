@@ -1,0 +1,157 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: url('img/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header */
+header {
+    background: url('img/header-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.header-content img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+header blockquote {
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+/* Secciones */
+section {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.8em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+/* Educación y Habilidades */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #007bff; /* Cambia este color si prefieres otro */
+}
+
+/* Enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    .header-content img {
+        width: 100px;
+        height: 100px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+.about {
+
+    display: flex; /* Usa flexbox para alinear horizontalmente */
+    align-items: center; /* Alinea verticalmente el SVG y el texto */
+    gap: 30px;
+}
+.about-icon {
+    width: 60px; /* Tamaño del SVG */
+    height: 60px; /* Tamaño del SVG */
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: 20px; /* Para separar el footer del contenido principal */
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espacio entre los iconos */
+}
+
+.social-links a {
+    display: inline-block;
+}
+
+.social-links img {
+    width: 40px; /* Ajusta el tamaño de los iconos */
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del icono al pasar el cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Agrega sombra */
+}
